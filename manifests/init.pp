@@ -1,5 +1,4 @@
-class sudo::manage($sudo_data){
-  include sudo::params
+class sudo_wrap::manage($sudo_data){
 
-  create_resources('sudo::conf', $sudo_data)
+      create_resources('sudo::conf', $sudo_data)
 }
